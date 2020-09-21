@@ -1,0 +1,12 @@
+## Setup
+mvn clean install in outrun-db
+mvn clean install in outrun
+docker-compose up in outrun
+
+## Access mongo db
+docker exec -it [CONTAINER NAME] /bin/bash
+mongo --username spring --password spring outrun
+db.dog.find()
+
+## REST API
+http://localhost:8443/dog/all

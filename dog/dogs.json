@@ -1,8 +1,150 @@
 [
   {
-    "name": "feefee"
+    "dogNum": 1,
+    "regName": "Lignum Felix",
+    "regNo": "ISDS 361311",
+    "chipNo": null,
+    "dogImg": [
+      {
+        "url": "felix.JPG",
+        "copyright": "Victoria Maciver"
+      }
+    ],
+    "breeder": 2,
+    "owner": 1,
+    "kennel": "Lignum Working Dogs",
+    "sireId": 2,
+    "damId": 3,
+    "callName": "Felix",
+    "sex": "dog",
+    "dateOfBirth": "2018-10-10",
+    "dateOfDeath": null,
+    "landOfBirth": "United Kingdom",
+    "landOfStanding": "United Kingdom",
+    "size": null,
+    "weight": "22 kg",
+    "colour": {
+      "pigment": "black",
+      "tricolour": false,
+      "merle": true,
+      "sable": false,
+      "eeRed": false
+    },
+    "coat": "rough",
+    "titles": [],
+    "healthTests": {
+      "dm": "Parentage clear",
+      "raineSyndrome": "Parentage clear",
+      "mh": "Parentage clear",
+      "pll": "Parentage clear",
+      "vn": "Parentage clear",
+      "tns": "Parentage clear",
+      "sn": "Parentage clear",
+      "igs": "Parentage clear",
+      "gg": "Parentage clear",
+      "mdr1": "Parentage clear"
+    },
+    "coi": null,
+    "notes": null
   },
   {
-    "name": "pantsman"
+    "dogNum": 2,
+    "regName": "Lignum Brin",
+    "regNo": "ISDS 360404",
+    "chipNo": null,
+    "dogImg": [
+      {
+        "url": "brin.JPG",
+        "copyright": "Victoria Maciver"
+      }
+    ],
+    "breeder": 2,
+    "owner": 2,
+    "kennel": "Lignum Working Dogs",
+    "sireId": null,
+    "damId": null,
+    "callName": "Brin",
+    "sex": "dog",
+    "dateOfBirth": "2016-03-16",
+    "dateOfDeath": null,
+    "landOfBirth": "United Kingdom",
+    "landOfStanding": "United Kingdom",
+    "size": null,
+    "weight": null,
+    "colour": {
+      "pigment": "black",
+      "tricolour": false,
+      "merle": true,
+      "sable": false,
+      "eeRed": false
+    },
+    "coat": "rough",
+    "titles": [],
+    "coi": null,
+    "healthTests": {
+      "hipScore": "7:7",
+      "elbowScore": "0",
+      "cea": "DNA clear",
+      "dm": "DNA clear",
+      "raineSyndrome": "DNA clear",
+      "mh": "DNA clear",
+      "pll": "DNA clear",
+      "vn": "DNA clear",
+      "tns": "DNA clear",
+      "sn": "DNA clear",
+      "igs": "DNA clear",
+      "gg": "DNA clear",
+      "mdr1": "DNA clear"
+    },
+    "notes": "Registered On Merit with ISDS"
+  },
+  {
+    "dogNum": 3,
+    "regName": "Lignum Fig",
+    "regNo": "ISDS 360405",
+    "chipNo": null,
+    "dogImg": [
+      {
+        "url": "fig.JPG",
+        "copyright": "Victoria Maciver"
+      }
+    ],
+    "breeder": 2,
+    "owner": 2,
+    "kennel": "Lignum Working Dogs",
+    "sireId": null,
+    "damId": null,
+    "callName": "Fig",
+    "sex": "bitch",
+    "dateOfBirth": "2016-09-01",
+    "dateOfDeath": null,
+    "landOfBirth": "United Kingdom",
+    "landOfStanding": "United Kingdom",
+    "size": null,
+    "weight": null,
+    "colour": {
+      "pigment": "chocolate",
+      "tricolour": true,
+      "merle": false,
+      "sable": false,
+      "eeRed": false
+    },
+    "coat": "rough",
+    "titles": [],
+    "coi": null,
+    "healthTests": {
+      "cea": "DNA carrier",
+      "dm": "DNA clear",
+      "raineSyndrome": "DNA clear",
+      "mh": "DNA clear",
+      "pll": "DNA clear",
+      "vn": "DNA clear",
+      "tns": "DNA clear",
+      "sn": "DNA clear",
+      "igs": "DNA clear",
+      "gg": "DNA clear",
+      "mdr1": "DNA clear"
+    },
+    "notes": "Registered On Merit with ISDS"
   }
 ]
