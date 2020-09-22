@@ -1,29 +1,6 @@
 version: '3.7'
 
 services:
-#  elasticsearch:
-#    image: docker.elastic.co/elasticsearch/elasticsearch:6.4.2
-#    environment:
-#      - cluster.name=docker-cluse
-#      - bootstrap.memory_lock=true
-#      - http.host=0.0.0.0
-#      - transport.host=127.0.0.1
-#      - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
-#    ulimits:
-#      memlock:
-#        soft: -1
-#        hard: 1
-#    ports:
-#      - "9200:9200"
-#      - "9300:9300"
-#
-#  kibana:
-#    image: docker.elastic.co/kibana/kibana:6.4.2
-#    ports:
-#      - "5601:5601"
-#    depends_on:
-#      - elasticsearch
-
   outrun-db:
     image: outrun-db
     container_name: outrun-db
@@ -44,11 +21,23 @@ services:
     container_name: outrun
     restart: always
     ports:
-      - ${OUTRUN_PORT}:${OUTRUN_PORT}
+      - ${OUTRUN_CORE_PORT}:${OUTRUN_CORE_PORT}
     environment:
-      SERVER_PORT: ${OUTRUN_PORT}
+      SERVER_PORT: ${OUTRUN_CORE_PORT}
     depends_on:
       - outrun-db
+
+  outrun-web:
+    image: outrun-web
+    container_name: outrun-web
+    restart: always
+    ports:
+      - ${OUTRUN_WEB_PORT}:${OUTRUN_WEB_PORT}
+    environment:
+      SERVER_PORT: ${OUTRUN_WEB_PORT}
+    depends_on:
+      - outrun-db
+      - outrun
 
 volumes:
   mongo:

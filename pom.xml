@@ -56,15 +56,6 @@
                     </execution>
                 </executions>
             </plugin>
-
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.2.6.RELEASE</version>
-                <configuration>
-                    <mainClass>uk.co.outrun.Main</mainClass>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
 
