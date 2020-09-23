@@ -4,12 +4,7 @@
     "regName": "Lignum Felix",
     "regNo": "ISDS 361311",
     "chipNo": null,
-    "dogImg": [
-      {
-        "url": "felix.JPG",
-        "copyright": "Victoria Maciver"
-      }
-    ],
+    "dogImg": "1-felix.JPG",
     "breeder": 2,
     "owner": 1,
     "kennel": "Lignum Working Dogs",
@@ -52,12 +47,7 @@
     "regName": "Lignum Brin",
     "regNo": "ISDS 360404",
     "chipNo": null,
-    "dogImg": [
-      {
-        "url": "brin.JPG",
-        "copyright": "Victoria Maciver"
-      }
-    ],
+    "dogImg": "2-brin.JPG",
     "breeder": 2,
     "owner": 2,
     "kennel": "Lignum Working Dogs",
@@ -103,12 +93,7 @@
     "regName": "Lignum Fig",
     "regNo": "ISDS 360405",
     "chipNo": null,
-    "dogImg": [
-      {
-        "url": "fig.JPG",
-        "copyright": "Victoria Maciver"
-      }
-    ],
+    "dogImg": "3-fig.JPG",
     "breeder": 2,
     "owner": 2,
     "kennel": "Lignum Working Dogs",

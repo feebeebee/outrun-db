@@ -27,17 +27,17 @@ services:
     depends_on:
       - outrun-db
 
-  outrun-web:
-    image: outrun-web
-    container_name: outrun-web
-    restart: always
-    ports:
-      - ${OUTRUN_WEB_PORT}:${OUTRUN_WEB_PORT}
-    environment:
-      SERVER_PORT: ${OUTRUN_WEB_PORT}
-    depends_on:
-      - outrun-db
-      - outrun
+#  outrun-web:
+#    image: outrun-web
+#    container_name: outrun-web
+#    restart: always
+#    ports:
+#      - ${OUTRUN_WEB_PORT}:${OUTRUN_WEB_PORT}
+#    environment:
+#      SERVER_PORT: ${OUTRUN_WEB_PORT}
+#    depends_on:
+#      - outrun-db
+#      - outrun
 
 volumes:
   mongo:
