@@ -2,7 +2,8 @@ version: '3.7'
 
 services:
   outrun-db:
-    image: outrun-db
+    image: 725705545716.dkr.ecr.eu-west-2.amazonaws.com/outrun-db:latest
+#    image: outrun-db
     container_name: outrun-db
     restart: always
     ports:
@@ -17,7 +18,8 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
 
   outrun:
-    image: outrun
+    image: 725705545716.dkr.ecr.eu-west-2.amazonaws.com/outrun:latest
+#    image: outrun
     container_name: outrun
     restart: always
     ports:
@@ -27,17 +29,18 @@ services:
     depends_on:
       - outrun-db
 
-#  outrun-web:
+  outrun-web:
+    image: 7257055455716.dkr.ecr.eu-west-2.amazonaws.com/outrun-web:latest
 #    image: outrun-web
-#    container_name: outrun-web
-#    restart: always
-#    ports:
-#      - ${OUTRUN_WEB_PORT}:${OUTRUN_WEB_PORT}
-#    environment:
-#      SERVER_PORT: ${OUTRUN_WEB_PORT}
-#    depends_on:
-#      - outrun-db
-#      - outrun
+    container_name: outrun-web
+    restart: always
+    ports:
+      - ${OUTRUN_WEB_PORT}:${OUTRUN_WEB_PORT}
+    environment:
+      SERVER_PORT: ${OUTRUN_WEB_PORT}
+    depends_on:
+      - outrun-db
+      - outrun
 
 volumes:
   mongo:
