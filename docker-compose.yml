@@ -30,7 +30,7 @@ services:
       - outrun-db
 
   outrun-web:
-    image: 7257055455716.dkr.ecr.eu-west-2.amazonaws.com/outrun-web:latest
+    image: 725705545716.dkr.ecr.eu-west-2.amazonaws.com/outrun-web:latest
 #    image: outrun-web
     container_name: outrun-web
     restart: always
