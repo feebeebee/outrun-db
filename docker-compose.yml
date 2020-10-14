@@ -2,20 +2,21 @@ version: '3.7'
 
 services:
   outrun-db:
-    image: 725705545716.dkr.ecr.eu-west-2.amazonaws.com/outrun-db:latest
-#    image: outrun-db
+#    image: 725705545716.dkr.ecr.eu-west-2.amazonaws.com/outrun-db:latest
+    image: outrun-db
     container_name: outrun-db
     restart: always
     ports:
-      - ${MONGO_INITDB_PORT}:${MONGO_INITDB_PORT}
+      - ${MYSQL_PORT}:${MYSQL_PORT}
+    expose:
+      - ${MYSQL_PORT}
     volumes:
-      - mongo:/data/db
+      - outrun:/var/lib/mysql
     environment:
-      MONGO_INITDB_DATABASE: ${MONGO_INITDB_DATABASE}
-      MONGO_INITDB_APP_USERNAME: ${MONGO_INITDB_APP_USERNAME}
-      MONGO_INITDB_APP_PASSWORD: ${MONGO_INITDB_APP_PASSWORD}
-      MONGO_INITDB_ROOT_USERNAME: ${MONGO_INITDB_ROOT_USERNAME}
-      MONGO_INITDB_ROOT_PASSWORD: ${MONGO_INITDB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+      MYSQL_USER: ${MYSQL_USER}
+      MYSQL_PASSWORD: ${MONGO_INITDB_APP_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
 
   outrun:
     image: 725705545716.dkr.ecr.eu-west-2.amazonaws.com/outrun:latest
@@ -30,7 +31,7 @@ services:
       - outrun-db
 
   outrun-web:
-    image: 7257055455716.dkr.ecr.eu-west-2.amazonaws.com/outrun-web:latest
+    image: 725705545716.dkr.ecr.eu-west-2.amazonaws.com/outrun-web:latest
 #    image: outrun-web
     container_name: outrun-web
     restart: always
@@ -43,4 +44,4 @@ services:
       - outrun
 
 volumes:
-  mongo:
+  outrun-:
